@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title = "Employe details">
+       <div class = "slds-m-around_medium">
+             <p> Full Name :{name} </p> <br/>
+            <p> Age :{age} </p><br/>
+             <p> Salary :{salary} </p><br/>
+              <p> Experiences :{exp} </p><br/>
+
+        <lightning-input label = "Enter your Name" value = {name} onchange = {Namehandler}>
+         </lightning-input> <br/>
+         <lightning-input label = "Enter your Age" value = {age} onchange = {Agehandler}>
+         </lightning-input><br/>
+         <lightning-input label = "Enter your salary" value = {salary} onchange = {Salaryhandler}>
+         </lightning-input><br/>
+         <lightning-input label = "Enter your N°Experience" value = {exp} onchange = {Exphandler}>
+         </lightning-input>
+       </div>
+       </lightning-card>
+
+</template>
