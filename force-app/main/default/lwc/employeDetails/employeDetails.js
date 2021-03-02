@@ -23,5 +23,9 @@ export default class EmployeDetails extends LightningElement {
     {
         this.exp = event.target.value
     }
+    Adrhandler(event)
+    {
+        this.adr = event.target.value
+    }
 
 }
