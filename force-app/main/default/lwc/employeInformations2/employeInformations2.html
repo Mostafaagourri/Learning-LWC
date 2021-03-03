@@ -1,0 +1,31 @@
+<template>
+     <template if:true={infos}>
+        <lightning-card title = 'Employe'>
+            <div class = "slds-m-around_medium">
+                <lightning-input label = "Enter your Name"  required="true" placeholder="type here..." value = {name} onchange = {Namehandler}>
+                </lightning-input> <br/>
+                <lightning-input label = "Enter your Age"  required="true" type="number" value = {age} onchange = {Agehandler}>
+                </lightning-input><br/>
+                <lightning-input label = "Enter your salary" type="number" value = {salary} onchange = {Salaryhandler}>
+                </lightning-input><br/>
+                <lightning-input label = "Enter your N° Experience" required="true" type="floatformat" value = {exp} onchange = {Exphandler}>
+                </lightning-input><br/>
+                <lightning-input label = "Enter your Adresse"  value = {adr} onchange = {Adrhandler}>
+                </lightning-input><br/>
+                <lightning-button label = "save" onclick={savehandler}>
+                </lightning-button><br/>
+            </div>
+               </lightning-card>
+    </template>
+
+    <template if:false={infos}>
+    <lightning-card title = "informations :">
+     <div class = "slds-m-around_medium">
+             <p> Full Name : {name} </p> <br/>
+            <p> Age : {age} </p><br/>
+             <p> Salary : {salary} </p><br/>
+              <p> Experiences : {exp} </p><br/>
+    </div>
+    </lightning-card>
+    </template>
+</template>
