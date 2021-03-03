@@ -13,9 +13,22 @@
           </lightning-button> &nbsp;
           <lightning-button label = "/" onclick={divhandler}>
         </lightning-button> &nbsp;  <br/> <br/>
+     
+      <div if:true={IsError}>
+      <span style = "color:red">
          <lightning-formatted-text value = {currenttext} >
-                    </lightning-formatted-text>
+          </lightning-formatted-text>
+        </span>
+      </div>
+      <div if:false={IsError}>
+      <span style = "color:green">
+         <lightning-formatted-text value = {currenttext} >
+          </lightning-formatted-text>
+        </span>
+      </div>
+        
+
         </div>
     </lightning-card>
-    
+
 </template>
