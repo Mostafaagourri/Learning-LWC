@@ -27,6 +27,10 @@ export default class CalculatorAdvanced extends LightningElement
     {
         this.currenttext = 'the result of operation is : '+(this.number1 * this.number2);
     }
+    Squarehandler(event)
+    {
+        this.currenttext = 'the result of operation is : '+(this.number1 * this.number1);
+    }
     divhandler(event)
     {
         if(this.number2 == 0){
