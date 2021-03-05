@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Create Account">
+           <div class = "slds-m-around_medium">
+        <lightning-layout>
+            <lightning-layout-item size="12" padding="around-small">
+                    <lightning-input name="Account Name " label="Name" onchange={accountNameChangeHandler}></lightning-input>
+                    <lightning-input name="Raison sociale " label="Raison sociale" onchange={accountrsChangeHandler}></lightning-input>
+                    <lightning-input name="Nombre d’employés " label="Nombre empolyes" onchange={accountneChangeHandler}></lightning-input><br/>
+                    <lightning-button label="Create Account " onclick={createAccount} variant="brand"></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+              </div>
+    </lightning-card>
+</template>
