@@ -12,6 +12,14 @@ export default class GetPicklistValuesOfField extends LightningElement {
 
     value ='';
 
+
+
+
+
+
+
+    
+
     // to get the default record type id, if you dont' have any recordtypes then it will get master
 
     @wire(getObjectInfo, { objectApiName: ACCOUNT_OBJECT })
